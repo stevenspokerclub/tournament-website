@@ -17,7 +17,7 @@ body {
   display: grid;
   /* height: 100%; */
   grid-template-rows: 200px 1fr 60px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "logo logo"
     "timer tables"
@@ -80,13 +80,17 @@ body {
   background-color: #a62026;
 }
 
-.chipvalue-container table tr th:nth-child(even) {
+.chipvalue-container table tr th:not(:first-child) {
   text-align: right;
 }
 
-.chipvalue-container table tr th:nth-child(odd) {
-  text-align: left;
-}
+/* .chipvalue-container table tr th:nth-child(even) { */
+/*   text-align: right; */
+/* } */
+/**/
+/* .chipvalue-container table tr th:nth-child(odd) { */
+/*   text-align: left; */
+/* } */
 
 tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.1);
