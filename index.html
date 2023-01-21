@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Stevens Poker Club</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Stevens Poker Club Resources and Tools" />
+    <meta name="keywords" content="Stevens Poker Club, SPC, Poker, SPC Tools" />
+    <meta name="author" content="Marcin Wisniowski, David Krauthamer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="mobile.css"
+    />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Stevens Poker Club</title>
-  <link rel="stylesheet" href="main.css" />
-  <meta charset="UTF-8" />
-  <meta name="description" content="Stevens Poker Club Resources and Tools" />
-  <meta name="keywords" content="Stevens Poker Club, SPC, Poker, SPC Tools" />
-  <meta name="author" content="Marcin Wisniowski" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css" />
-  <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
-</head>
+  <body>
+    <img id="SPClogo" src="images/SPClogo.png" alt="SPC Logo" />
 
-<body>
-  <img id="SPClogo" src="images/SPClogo.png" alt="SPC Logo" />
-
-  <!--Section 1: Timer-->
-  <div class="timer-container">
-    <h1>Countdown Timer</h1>
-    <div id="minutestimer" class="outertimediv">
-      <div class="innertimediv">
-        <input type="number" id="minutes" placeholder="00" min="0" value="30" />
+    <div class="timer-container">
+      <h1>Countdown Timer</h1>
+      <div id="minutestimer" class="outertimediv">
+        <div class="innertimediv">
+          <input
+            type="number"
+            id="minutes"
+            placeholder="00"
+            min="0"
+            value="30"
+          />
+        </div>
+        <span>Minutes</span>
       </div>
-      <span>Minutes</span>
-    </div>
-    <div class="progress-div-min">
-      <div id="minute-progress"></div>
-    </div>
-
-    <div id="secondstimer" class="outertimediv">
-      <div class="innertimediv">
-        <input type="number" id="seconds" placeholder="00" min="0" max="60" />
+      <div class="progress-div-min">
+        <div id="minute-progress"></div>
       </div>
-      <span>Seconds</span>
-    </div>
-    <div class="progress-div-sec">
-      <div id="second-progress"></div>
-    </div>
-    <button class="timer-button" id="start-timer">Start</button>
-    <button class="timer-button" id="pause-timer">Pause</button>
-  </div>
 
-  <div class="table-container">
-    <div class="chipvalue-container">
+      <div id="secondstimer" class="outertimediv">
+        <div class="innertimediv">
+          <input type="number" id="seconds" placeholder="00" min="0" max="60" />
+        </div>
+        <span>Seconds</span>
+      </div>
+      <div class="progress-div-sec">
+        <div id="second-progress"></div>
+      </div>
+      <button class="timer-button" id="start-timer">Start</button>
+      <button class="timer-button" id="pause-timer">Pause</button>
+    </div>
+
+    <!-- <div class="table-container"> -->
+    <div class="table-container chipvalue-container">
+      <h1>Starting Stack</h1>
       <table class="chip-value-table">
         <tr>
-          <th>Color</th>
           <th>Value</th>
           <th>Start With</th>
         </tr>
         <tr>
-          <th>WHITE</th>
           <th>100</th>
-          <th>10</th>
+          <th>15</th>
         </tr>
         <tr>
-          <th>RED</th>
-          <th>200</th>
-          <th>10</th>
-        </tr>
-        <tr>
-          <th>BLUE</th>
           <th>500</th>
-          <th>6</th>
+          <th>8</th>
         </tr>
         <tr>
-          <th>GREEN</th>
           <th>1000</th>
-          <th>4</th>
+          <th>5</th>
         </tr>
         <tr>
-          <th>BLACK</th>
           <th>5000</th>
           <th>3</th>
-        </tr>
-        <tr>
-          <th>Total</th>
-          <th>25,000</th>
         </tr>
       </table>
     </div>
 
-    <div class="blinds-container">
+    <div class="table-container blinds-container">
       <table class="blinds-table">
         <tr>
-          <th>Time (minutes)</th>
+          <th>Time</th>
           <th>Small Blind</th>
           <th>Big Blind</th>
           <th>Ante</th>
@@ -125,7 +126,7 @@
         <tr>
           <th>20</th>
           <th>700</th>
-          <th>1500</th>
+          <th>1400</th>
           <th>100</th>
         </tr>
         <tr>
@@ -137,7 +138,7 @@
         <tr>
           <th>15</th>
           <th>1200</th>
-          <th>2500</th>
+          <th>2400</th>
           <th>200</th>
         </tr>
         <tr>
@@ -174,45 +175,46 @@
           <th>15</th>
           <th>5000</th>
           <th>10000</th>
-          <th>Heads Up (or 2k)</th>
+          <th>2000</th>
         </tr>
         <tr>
           <th>15</th>
           <th>10000</th>
           <th>15000</th>
-          <th>Heads Up (or 3k)</th>
+          <th>3000</th>
         </tr>
         <tr>
           <th>20</th>
           <th>10000</th>
           <th>20000</th>
-          <th>Heads Up (or 4k)</th>
+          <th>4000</th>
         </tr>
         <tr>
           <th>0</th>
           <th>15000</th>
           <th>30000</th>
-          <th>Heads Up (bruh what)</th>
+          <th>5000</th>
         </tr>
       </table>
     </div>
-  </div>
 
-  <footer class="footer">
-    <table>
-      <tr>
-        <td>
-          <a href="https://ducklink.stevens.edu/organization/stevens-poker-club"><img src="images/ducklinkicon.png"
-              width="100" alt="ducklink" /></a>
-        </td>
-        <td>
-          <a target="_blank" href="https://discordapp.com/invite/VBzJjKs"><img src="images/discordicon.png" width="30"
-              alt="discord" /></a>
-        </td>
-      </tr>
-    </table>
-  </footer>
-  <script src="main.js"></script>
-</body>
-
+    <footer class="footer">
+      <table>
+        <tr>
+          <td>
+            <a
+              href="https://ducklink.stevens.edu/organization/stevens-poker-club"
+              ><img src="images/ducklinkicon.png" width="100" alt="ducklink"
+            /></a>
+          </td>
+          <td>
+            <a target="_blank" href="https://discordapp.com/invite/VBzJjKs"
+              ><img src="images/discordicon.png" width="30" alt="discord"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
