@@ -1,5 +1,4 @@
 const startBtn = document.querySelector("#start-timer");
-const resetBtn = document.querySelector("#reset-timer");
 const pauseBtn = document.querySelector("#pause-timer");
 const inputminutes = document.querySelector("#minutestimer input");
 const inputseconds = document.querySelector("#secondstimer input");
@@ -8,13 +7,13 @@ const minProgress = document.querySelector("#minute-progress");
 const timerTable = document.querySelector(".blinds-table");
 const timerInnerTable = timerTable.childNodes[1].childNodes;
 
-var running = false;
-var seconds;
-var startseconds;
-var timeElapsed = 0;
-var firstTime = true;
-var tableRow = 2;
-var oldbackground;
+let running = false;
+let seconds;
+let startseconds;
+let timeElapsed = 0;
+let firstTime = true;
+let tableRow = 2;
+let oldbackground;
 
 startBtn.addEventListener("click", startClick, false);
 pauseBtn.addEventListener("click", pauseClick, false);
@@ -26,11 +25,11 @@ inputseconds.addEventListener(
       startClick();
     }
   },
-  false
+  false,
 );
 
 //Initialize Timer at Largest Table Value
-setHTML(timerInnerTable[tableRow].childNodes[1].innerHTML * 60);
+setHTML(timerInnerTable[tableRow].childNodes[3].innerHTML * 60);
 tableRow += 2;
 
 function startClick() {
@@ -92,7 +91,7 @@ function countDown(seconds) {
       }
 
       tableRow += 2;
-      var a = new Audio("sound.mp3");
+      const a = new Audio("sound.mp3");
       a.play();
       setTimeout(function () {}, 5000);
       startClick();
