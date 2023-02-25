@@ -1,241 +1,224 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Stevens Poker Club</title>
-    <link rel="stylesheet" href="main.css" />
-    <meta charset="UTF-8" />
-    <meta name="description" content="Stevens Poker Club Resources and Tools" />
-    <meta name="keywords" content="Stevens Poker Club, SPC, Poker, SPC Tools" />
-    <meta name="author" content="Marcin Wisniowski, David Krauthamer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 767px)"
-      href="mobile.css"
-    />
-    <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <img id="SPClogo" src="images/SPClogo.png" alt="SPC Logo" />
+<head>
+  <title>Stevens Poker Club</title>
+  <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Stevens Poker Club Resources and Tools" />
+  <meta name="keywords" content="Stevens Poker Club, SPC, Poker, SPC Tools" />
+  <meta name="author" content="Marcin Wisniowski, David Krauthamer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
+</head>
 
-    <div class="timer-container">
-      <h1>Countdown Timer</h1>
-      <div id="minutestimer" class="outertimediv">
-        <div class="innertimediv">
-          <input
-            type="number"
-            id="minutes"
-            placeholder="00"
-            min="0"
-            value="30"
-          />
-        </div>
-        <span>Minutes</span>
-      </div>
-      <div class="progress-div-min">
-        <div id="minute-progress"></div>
-      </div>
+<body>
+  <img id="SPClogo" src="images/SPClogo.png" alt="SPC Logo" />
 
-      <div id="secondstimer" class="outertimediv">
-        <div class="innertimediv">
-          <input type="number" id="seconds" placeholder="00" min="0" max="60" />
-        </div>
-        <span>Seconds</span>
+  <div class="timer-container">
+    <h1>Countdown Timer</h1>
+    <div id="minutestimer" class="outertimediv">
+      <div class="innertimediv">
+        <input type="number" id="minutes" placeholder="00" min="0" value="30" />
       </div>
-      <div class="progress-div-sec">
-        <div id="second-progress"></div>
-      </div>
-      <button class="timer-button" id="start-timer">Start</button>
-      <button class="timer-button" id="pause-timer">Pause</button>
+      <span>Minutes</span>
+    </div>
+    <div class="progress-div-min">
+      <div id="minute-progress"></div>
     </div>
 
-    <div class="table-container chipvalue-container">
-      <h1>Starting Stack</h1>
-      <table class="chip-value-table">
-        <tr>
-          <th>Value</th>
-          <th>Start With</th>
-        </tr>
-        <tr>
-          <th>100</th>
-          <th>20</th>
-        </tr>
-        <tr>
-          <th>500</th>
-          <th>16</th>
-        </tr>
-        <tr>
-          <th>1000</th>
-          <th>5</th>
-        </tr>
-        <tr>
-          <th>5000</th>
-          <th>3</th>
-        </tr>
-        <tr>
-          <th>Total</th>
-          <th>30,000</th>
-        </tr>
-      </table>
+    <div id="secondstimer" class="outertimediv">
+      <div class="innertimediv">
+        <input type="number" id="seconds" placeholder="00" min="0" max="60" />
+      </div>
+      <span>Seconds</span>
     </div>
-
-    <div class="table-container blinds-container">
-      <table class="blinds-table">
-        <tr>
-          <th>Blind Level</th>
-          <th>Time</th>
-          <th>Small Blind</th>
-          <th>Big Blind</th>
-          <th>Ante</th>
-        </tr>
-        <tr id="blinds-table-start">
-          <th>1</th>
-          <th>25</th>
-          <th>100</th>
-          <th>200</th>
-          <th>N/A</th>
-        </tr>
-        <tr>
-          <th>2</th>
-          <th>25</th>
-          <th>200</th>
-          <th>400</th>
-          <th>N/A</th>
-        </tr>
-        <tr>
-          <th>3</th>
-          <th>25</th>
-          <th>300</th>
-          <th>600</th>
-          <th>N/A</th>
-        </tr>
-        <tr>
-          <th>4</th>
-          <th>25</th>
-          <th>400</th>
-          <th>800</th>
-          <th>N/A</th>
-        </tr>
-        <tr>
-          <th>5</th>
-          <th>25</th>
-          <th>500</th>
-          <th>1000</th>
-          <th>N/A</th>
-        </tr>
-        <tr>
-          <th>6</th>
-          <th>20</th>
-          <th>700</th>
-          <th>1400</th>
-          <th>100</th>
-        </tr>
-        <tr>
-          <th>7</th>
-          <th>20</th>
-          <th>1000</th>
-          <th>2000</th>
-          <th>200</th>
-        </tr>
-        <tr>
-          <th>8</th>
-          <th>20</th>
-          <th>1200</th>
-          <th>2400</th>
-          <th>200</th>
-        </tr>
-        <tr>
-          <th>9</th>
-          <th>20</th>
-          <th>1500</th>
-          <th>3000</th>
-          <th>300</th>
-        </tr>
-        <tr>
-          <th>10</th>
-          <th>20</th>
-          <th>2000</th>
-          <th>4000</th>
-          <th>400</th>
-        </tr>
-        <tr>
-          <th>11</th>
-          <th>20</th>
-          <th>2500</th>
-          <th>5000</th>
-          <th>500</th>
-        </tr>
-        <tr>
-          <th>12</th>
-          <th>15</th>
-          <th>3000</th>
-          <th>6000</th>
-          <th>1000</th>
-        </tr>
-        <tr>
-          <th>13</th>
-          <th>15</th>
-          <th>4000</th>
-          <th>8000</th>
-          <th>1000</th>
-        </tr>
-        <tr>
-          <th>14</th>
-          <th>15</th>
-          <th>5000</th>
-          <th>10000</th>
-          <th>2000</th>
-        </tr>
-        <tr>
-          <th>15</th>
-          <th>15</th>
-          <th>10000</th>
-          <th>15000</th>
-          <th>3000</th>
-        </tr>
-        <tr>
-          <th>16</th>
-          <th>15</th>
-          <th>10000</th>
-          <th>20000</th>
-          <th>4000</th>
-        </tr>
-        <tr>
-          <th>17</th>
-          <th>0</th>
-          <th>15000</th>
-          <th>30000</th>
-          <th>5000</th>
-        </tr>
-      </table>
+    <div class="progress-div-sec">
+      <div id="second-progress"></div>
     </div>
+    <button class="timer-button" id="start-timer">Start</button>
+    <button class="timer-button" id="pause-timer">Pause</button>
+  </div>
 
-    <footer class="footer">
-      <table>
-        <tr>
-          <td>
-            <a
-              href="https://ducklink.stevens.edu/organization/stevens-poker-club"
-              ><img src="images/ducklinkicon.png" width="100" alt="ducklink"
-            /></a>
-          </td>
-          <td>
-            <a target="_blank" href="https://discordapp.com/invite/VBzJjKs"
-              ><img src="images/discordicon.png" width="30" alt="discord"
-            /></a>
-          </td>
-        </tr>
-      </table>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+  <div class="table-container chipvalue-container">
+    <h1>Starting Stack</h1>
+    <table class="chip-value-table">
+      <tr>
+        <th>Value</th>
+        <th>Start With</th>
+      </tr>
+      <tr>
+        <th>100</th>
+        <th>20</th>
+      </tr>
+      <tr>
+        <th>500</th>
+        <th>16</th>
+      </tr>
+      <tr>
+        <th>1000</th>
+        <th>5</th>
+      </tr>
+      <tr>
+        <th>5000</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>30,000</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="table-container blinds-container">
+    <table class="blinds-table">
+      <tr>
+        <th>Blind Level</th>
+        <th>Time</th>
+        <th>Small Blind</th>
+        <th>Big Blind</th>
+        <th>Ante</th>
+      </tr>
+      <tr id="blinds-table-start">
+        <th>1</th>
+        <th>25</th>
+        <th>100</th>
+        <th>200</th>
+        <th>N/A</th>
+      </tr>
+      <tr>
+        <th>2</th>
+        <th>25</th>
+        <th>200</th>
+        <th>400</th>
+        <th>N/A</th>
+      </tr>
+      <tr>
+        <th>3</th>
+        <th>25</th>
+        <th>300</th>
+        <th>600</th>
+        <th>N/A</th>
+      </tr>
+      <tr>
+        <th>4</th>
+        <th>25</th>
+        <th>400</th>
+        <th>800</th>
+        <th>N/A</th>
+      </tr>
+      <tr>
+        <th>5</th>
+        <th>25</th>
+        <th>500</th>
+        <th>1000</th>
+        <th>N/A</th>
+      </tr>
+      <tr>
+        <th>6</th>
+        <th>20</th>
+        <th>700</th>
+        <th>1500</th>
+        <th>100</th>
+      </tr>
+      <tr>
+        <th>7</th>
+        <th>20</th>
+        <th>1000</th>
+        <th>2000</th>
+        <th>200</th>
+      </tr>
+      <tr>
+        <th>8</th>
+        <th>20</th>
+        <th>1200</th>
+        <th>2500</th>
+        <th>200</th>
+      </tr>
+      <tr>
+        <th>9</th>
+        <th>20</th>
+        <th>1500</th>
+        <th>3000</th>
+        <th>300</th>
+      </tr>
+      <tr>
+        <th>10</th>
+        <th>20</th>
+        <th>2000</th>
+        <th>4000</th>
+        <th>500</th>
+      </tr>
+      <tr>
+        <th>11</th>
+        <th>20</th>
+        <th>2500</th>
+        <th>5000</th>
+        <th>500</th>
+      </tr>
+      <tr>
+        <th>12</th>
+        <th>15</th>
+        <th>3000</th>
+        <th>6000</th>
+        <th>1000</th>
+      </tr>
+      <tr>
+        <th>13</th>
+        <th>15</th>
+        <th>4000</th>
+        <th>8000</th>
+        <th>1000</th>
+      </tr>
+      <tr>
+        <th>14</th>
+        <th>15</th>
+        <th>5000</th>
+        <th>10000</th>
+        <th>2000</th>
+      </tr>
+      <tr>
+        <th>15</th>
+        <th>15</th>
+        <th>10000</th>
+        <th>15000</th>
+        <th>3000</th>
+      </tr>
+      <tr>
+        <th>16</th>
+        <th>15</th>
+        <th>10000</th>
+        <th>20000</th>
+        <th>5000</th>
+      </tr>
+      <tr>
+        <th>17</th>
+        <th>0</th>
+        <th>15000</th>
+        <th>30000</th>
+        <th>5000</th>
+      </tr>
+    </table>
+  </div>
+
+  <footer class="footer">
+    <table>
+      <tr>
+        <td>
+          <a href="https://ducklink.stevens.edu/organization/stevens-poker-club"><img src="images/ducklinkicon.png"
+              width="100" alt="ducklink" /></a>
+        </td>
+        <td>
+          <a target="_blank" href="https://discordapp.com/invite/VBzJjKs"><img src="images/discordicon.png" width="30"
+              alt="discord" /></a>
+        </td>
+      </tr>
+    </table>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
