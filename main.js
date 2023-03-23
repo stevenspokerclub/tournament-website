@@ -91,7 +91,7 @@ function countDown(seconds) {
       }
 
       tableRow += 2;
-      const a = new Audio("sound.mp3");
+      const a = new Audio("./blinds_are_up.m4a");
       a.play();
       setTimeout(function () {}, 5000);
       startClick();
