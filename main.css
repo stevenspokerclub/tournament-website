@@ -183,7 +183,7 @@ tr:nth-child(even) {
 
 .progress-div-sec {
   grid-area: progsec;
-  background-color: rgba(244, 119, 33, 0.4);
+  background-color: rgba(113, 59, 145,0.4);
   width: 50%;
   height: 100%;
 }
