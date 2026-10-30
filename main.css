@@ -26,7 +26,7 @@ body {
   grid-area: footer;
   padding: 15px 40px 15px 0px;
   text-align: right;
-  background-color: #c32026;
+  background-color: #F47721;
   position: fixed;
   width: 100%;
   height: 25px;
@@ -58,13 +58,13 @@ body {
 
 .chipvalue-container h1 {
   grid-area: title;
-  color: #000;
+  color: #17121F;
 }
 
 .table-container table {
   letter-spacing: 3px;
   font-size: 1.2em;
-  border: solid 3px #000;
+  border: solid 3px #17121F;
   border-spacing: 0px;
 }
 
@@ -73,8 +73,8 @@ body {
 }
 
 .table-container table tr:first-child {
-  color: #fff;
-  background-color: #a62026;
+  color: #F5F0E8;
+  background-color: #713B91;
 }
 
 .chipvalue-container table tr th:not(:first-child) {
@@ -82,7 +82,7 @@ body {
 }
 
 tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .timer-container {
@@ -105,17 +105,17 @@ tr:nth-child(even) {
 .timer-container h1 {
   grid-area: title;
   font-size: 3em;
-  color: #000;
+  color: #17121F;
 }
 
 #minutestimer {
   grid-area: time1;
-  color: #fff;
+  color: #F5F0E8;
 }
 
 #secondstimer {
   grid-area: time2;
-  color: #fff;
+  color: #F5F0E8;
 }
 
 #start-timer {
@@ -131,8 +131,8 @@ tr:nth-child(even) {
   flex-flow: row wrap;
   height: 100%;
   width: 100%;
-  background-color: #c32026;
-  color: #000;
+  background-color: #F47721;
+  color: #17121F;
   text-align: center;
 }
 
@@ -145,8 +145,8 @@ tr:nth-child(even) {
   height: 80%;
   margin: auto;
   width: 100%;
-  background-color: #a62026;
-  color: #fff;
+  background-color: #713B91;
+  color: #F5F0E8;
 }
 
 .innertimediv input {
@@ -156,8 +156,8 @@ tr:nth-child(even) {
   text-align: center;
   /* font-family: 'Luckiest Guy', sans-serif;*/
   font-family: "PT Sans", sans-serif;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #F5F0E8;
   border: none;
 }
 
@@ -167,26 +167,26 @@ tr:nth-child(even) {
   /* font-family: 'Luckiest Guy', sans-serif; */
   font-family: "PT Sans", sans-serif;
   font-size: 1.2em;
-  background-color: #fff;
-  border: 5px solid #c32026;
+  background-color: #F5F0E8;
+  border: 5px solid #F47721;
 }
 
 .progress-div-min {
   grid-area: progmin;
-  background-color: rgba(166, 32, 38, 0.25);
+  background-color: rgba(244, 119, 33, 0.4);
   width: 50%;
   height: 100%;
 }
 
 .progress-div-sec {
   grid-area: progsec;
-  background-color: rgba(166, 32, 38, 0.25);
+  background-color: rgba(244, 119, 33, 0.4);
   width: 50%;
   height: 100%;
 }
 
 #minute-progress {
-  background-color: #a62026;
+  background-color: #713B91;
   width: 100%;
   height: 0;
   -webkit-transition: 0.5s ease;
@@ -196,7 +196,7 @@ tr:nth-child(even) {
 }
 
 #second-progress {
-  background-color: #a62026;
+  background-color: #713B91;
   width: 100%;
   height: 0;
   -webkit-transition: 0.5s ease;
@@ -224,5 +224,5 @@ input:focus {
 }
 
 #blinds-table-start {
-  background-color: rgba(195, 32, 38, 0.4);
+  background-color: rgba(244, 119, 33, 0.4);
 }
