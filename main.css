@@ -9,11 +9,15 @@ html {
 }
 
 body {
+  body {
   display: grid;
+  background-color: #17121F;
+  color: #F5F0E8;
   grid-template:
     "logo logo logo" 200px
     "timer chipvalues blinds" 1fr
     "footer footer footer" 60px / 1fr 1fr 1fr;
+}
 }
 
 #SPClogo {
@@ -58,7 +62,7 @@ body {
 
 .chipvalue-container h1 {
   grid-area: title;
-  color: #17121F;
+  color: #F5F0E8;
 }
 
 .table-container table {
@@ -105,7 +109,7 @@ tr:nth-child(even) {
 .timer-container h1 {
   grid-area: title;
   font-size: 3em;
-  color: #17121F;
+  color: #F5F0E8;
 }
 
 #minutestimer {
